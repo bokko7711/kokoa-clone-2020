@@ -1,0 +1,40 @@
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #F9F9FA;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0,0,0,0.13);
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link{
+    color: #2F363E;
+    position: relative;
+}
+
+@keyframes notificationAnimation{
+    0%{transform: none;}
+    50%{transform: translateY(-5px);}
+    100%{transform: none;}
+}
+
+.nav__notification{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    animation: notificationAnimation 1s ease-in-out;
+}
+
+.nav__change{
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
